@@ -1,0 +1,16 @@
+{
+  "name": "Candela Reports Portal",
+  "short_name": "Candela Reports",
+  "description": "Access technical reports and test documentation from Candela Technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
