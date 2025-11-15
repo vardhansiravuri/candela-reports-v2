@@ -1,24 +1,28 @@
+// app/category/[category]/page.tsx
 import { notFound } from "next/navigation";
-import { reportData } from "../../../lib/reportData";
-import { CategoryClient } from "./CategoryClient";
+import CategoryClient from "./CategoryClient";
+import {
+  reportData,
+  categoryTitles,
+  type ReportCategorySlug,
+} from "@/lib/reportData";
 
-// In Next 15, `params` is a Promise, so we type it that way:
 type Props = {
-  params: Promise<{
-    category: string;
-  }>;
+  params: {
+    category: ReportCategorySlug;
+  };
 };
 
-export default async function CategoryPage({ params }: Props) {
-  // Wait for the params Promise
-  const { category } = await params;
+export default function CategoryPage({ params }: Props) {
+  const slug = params.category; // already like "automated-test-reports"
 
-  const decodedCategory = decodeURIComponent(category);
-  const files = reportData[decodedCategory];
-
+  const files = reportData[slug];
   if (!files) {
-    notFound();
+    return notFound();
   }
 
-  return <CategoryClient category={decodedCategory} files={files} />;
+  const title = categoryTitles[slug];
+
+  // CategoryClient expects a human readable category string + the file list
+  return <CategoryClient category={title} files={files} />;
 }
