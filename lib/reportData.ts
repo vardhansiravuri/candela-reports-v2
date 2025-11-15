@@ -1,5 +1,5 @@
 export const reportData: Record<string, string[]> = {
-  "Automated Test Reports": [
+  "Automated-Test-Reports": [
     "AP Auto Test Report.pdf",
     "Basic Client Connectivity Test.pdf",
     "Client Visualization.pdf",
@@ -20,7 +20,7 @@ export const reportData: Record<string, string[]> = {
     "Throughput vs Packet Size.pdf"
   ],
 
-  "Comparison charts": [
+  "Comparison-charts": [
     "Airtime Fairness Comparision Charts.pdf",
     "Rate vs Orientation Comparision charts.pdf",
     "Rate vs Range Comparision Charts.pdf"
@@ -36,7 +36,7 @@ export const reportData: Record<string, string[]> = {
     "FCC1_to_FCC6_30_trails.pdf"
   ],
 
-  "Interop Reports": [
+  "Interop-Reports": [
     "FTP Traffic Test.pdf",
     "Hotspot_TestReport_50 Iterations_2SAP's.pdf",
     "HTTP Traffic Test.pdf",
@@ -60,14 +60,14 @@ export const reportData: Record<string, string[]> = {
     "Zoom call Test.pdf"
   ],
 
-  "IoT Reports": [
+  "IoT-Reports": [
     "IoTDeviceTest_26 clients.pdf",
     "IoTDeviceTest_28 clients.pdf",
     "IoTDeviceTest_42 clients.pdf",
     "IoTDeviceTest_61 clients.pdf"
   ],
 
-  "Mesh Reports": [
+  "Mesh-Reports": [
     "2-Hop Backhaul RvR Report.pdf",
     "band_steering.pdf",
     "Mesh Automated Roaming Test Report.pdf",
@@ -75,7 +75,7 @@ export const reportData: Record<string, string[]> = {
     "Mesh Backhaul RvR Report.pdf"
   ],
 
-  "Network in a Box Reports": [
+  "Network-in-a-Box-Reports": [
     "120Minutes Longrun.pdf",
     "Duplex_home_scenario.pdf",
     "Kiosk Cafe.pdf",
@@ -88,7 +88,7 @@ export const reportData: Record<string, string[]> = {
     "Small_home_scenario.pdf"
   ],
 
-  "Test House Reports": [
+  "Test-House-Reports": [
     "2025-09-05-18-01-52-mixed_traffic_test_all.pdf",
     "2025-09-05-18-36-34-test_l3.pdf",
     "ftp_test.pdf",
@@ -124,7 +124,7 @@ export const reportData: Record<string, string[]> = {
     "6.5.7 MLO STR Test.pdf",
   ],
 
-  "Wi-Fi 7": [
+  "Wi-Fi_7": [
     "MLMR Peak Throughput.pdf",
     "Multi-Band Sniffing using Lanforge.pdf",
     "Peak Throughput 4x4_9.4Gbps.pdf",
@@ -135,7 +135,7 @@ export const reportData: Record<string, string[]> = {
     "TR-398v4 Preamble Puncturing.pdf"
   ],
 
-  "Wi-Fi AP TaaS": [
+  "Wi-Fi_AP_TaaS": [
     "Candela TaaS Report - Wi-Fi 7 AP.pdf",
     "Candela Testing as a service reports - Basic + Advanced suite reports.pdf"
   ]
