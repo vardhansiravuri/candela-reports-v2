@@ -1,28 +1,28 @@
-// app/category/[category]/page.tsx
 import { notFound } from "next/navigation";
-import CategoryClient from "./CategoryClient";
+import { CategoryClient } from "./CategoryClient";
 import {
   reportData,
   categoryTitles,
   type ReportCategorySlug,
-} from "@/lib/reportData";
+} from "../../../lib/reportData";
 
 type Props = {
-  params: {
+  params: Promise<{
     category: ReportCategorySlug;
-  };
+  }>;
 };
 
-export default function CategoryPage({ params }: Props) {
-  const slug = params.category; // already like "automated-test-reports"
+export default async function CategoryPage({ params }: Props) {
+  const { category } = await params; // slug, e.g. "wifi-7"
 
+  const slug = category;
   const files = reportData[slug];
+
   if (!files) {
-    return notFound();
+    notFound();
   }
 
   const title = categoryTitles[slug];
 
-  // CategoryClient expects a human readable category string + the file list
   return <CategoryClient category={title} files={files} />;
 }

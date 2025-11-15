@@ -1,19 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import type { ReportFile } from "../../../lib/reportData";
 
 type CategoryClientProps = {
-  category: string;
-  files: string[];
+  category: string;       // Human readable, e.g. "Wi-Fi 7"
+  files: ReportFile[];    // { name, path }[]
 };
 
-function buildReportUrl(category: string, file: string) {
-  return `/reports/${encodeURIComponent(category)}/${encodeURIComponent(file)}`;
-}
-
 export function CategoryClient({ category, files }: CategoryClientProps) {
-  const [selectedFile, setSelectedFile] = useState<string>(files[0]);
-  const currentUrl = buildReportUrl(category, selectedFile);
+  const [selectedFile, setSelectedFile] = useState<ReportFile>(files[0]);
+  const currentUrl = selectedFile.path;
 
   return (
     <div className="min-h-screen flex flex-col bg-neutral-950 text-white">
@@ -42,15 +39,15 @@ export function CategoryClient({ category, files }: CategoryClientProps) {
           <div className="space-y-1">
             {files.map((file) => (
               <button
-                key={file}
+                key={file.path}
                 onClick={() => setSelectedFile(file)}
                 className={`w-full text-left text-sm px-2 py-1.5 rounded-md truncate ${
-                  file === selectedFile
+                  file.path === selectedFile.path
                     ? "bg-neutral-800"
                     : "hover:bg-neutral-900"
                 }`}
               >
-                {file}
+                {file.name}
               </button>
             ))}
           </div>
@@ -61,7 +58,7 @@ export function CategoryClient({ category, files }: CategoryClientProps) {
           <div className="border-b border-neutral-800 px-4 py-3 flex items-center justify-between">
             <div>
               <p className="text-xs text-neutral-400 mb-1">Selected file</p>
-              <p className="text-sm font-medium">{selectedFile}</p>
+              <p className="text-sm font-medium">{selectedFile.name}</p>
             </div>
             <a
               href={currentUrl}
