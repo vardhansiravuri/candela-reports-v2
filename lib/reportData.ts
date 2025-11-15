@@ -120,9 +120,9 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
   // -----------------------------
   "comparison-charts": [
     {
-      name: "Airtime Fairness Comparison charts.pdf",
+      name: "Airtime Fairness Comparision charts.pdf",
       path:
-        "/reports/Comparison charts/Airtime Fairness Comparison charts.pdf",
+        "/reports/Comparison charts/Airtime Fairness Comparision charts.pdf",
     },
     {
       name: "Rate vs Orientation Comparision charts.pdf",
