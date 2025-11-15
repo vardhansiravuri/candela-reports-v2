@@ -136,9 +136,6 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
     },
   ],
 
-  // -----------------------------
-  // DFS
-  // -----------------------------
   dfs: [
     {
       name: "Detection Bandwidth Test - FCC.pdf",
