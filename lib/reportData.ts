@@ -2,6 +2,7 @@
 
 export type ReportCategorySlug =
   | "automated-test-reports"
+    "cellular-wifi"
   | "comparison-charts"
   | "dfs"
   | "interop-reports"
@@ -11,7 +12,8 @@ export type ReportCategorySlug =
   | "test-house-reports"
   | "tr-398"
   | "wifi-7"
-  | "wifi-ap-taas";
+  | "wifi-ap-taas"
+    "wifi-station-testing";
 
 export type ReportFile = {
   name: string;
@@ -20,6 +22,7 @@ export type ReportFile = {
 
 export const categoryTitles: Record<ReportCategorySlug, string> = {
   "automated-test-reports": "Automated Test Reports",
+  "cellular-wifi": "Cellular + Wi-Fi",
   "comparison-charts": "Comparison charts",
   dfs: "DFS",
   "interop-reports": "Interop Reports",
@@ -30,6 +33,7 @@ export const categoryTitles: Record<ReportCategorySlug, string> = {
   "tr-398": "TR-398",
   "wifi-7": "Wi-Fi 7",
   "wifi-ap-taas": "Wi-Fi AP TaaS",
+  "wifi-station-testing": "Wi-Fi Station Testing",
 };
 
 export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
