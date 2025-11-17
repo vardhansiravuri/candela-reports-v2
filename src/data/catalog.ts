@@ -26,12 +26,20 @@ export const categories: Category[] = [
     ],
   },
   {
+    name: "Cellular Wi-Fi",
+    slug: "cellular-wi-fi",
+    items: [
+      { title: "Cell Emulator 1.pdf", filename: "Cell Emulator 1.pdf", type: "pdf", size: "218 KB" },
+      { title: "Cell Emulator 2.pdf", filename: "Cell Emulator 2.pdf", type: "pdf", size: "290 KB" },
+    ],
+  },
+  {
     name: "Comparison charts",
     slug: "comparison-charts",
     items: [
-      { title: "Airtime Fairness Comparison charts.xlsx", filename: "Airtime Fairness Comparison charts.xlsx", type: "xlsx", size: "22.5 KB" },
-      { title: "Rate vs Orientation Comparision charts.xlsx", filename: "Rate vs Orientation Comparision charts.xlsx", type: "xlsx", size: "24.9 KB" },
-      { title: "Rate vs Range Comparision Charts.xlsx", filename: "Rate vs Range Comparision Charts.xlsx", type: "xlsx", size: "24.9 KB" },
+      { title: "Airtime Fairness Comparison charts.pdf", filename: "Airtime Fairness Comparison charts.pdf", type: "pdf", size: "22.5 KB" },
+      { title: "Rate vs Orientation Comparision charts.pdf", filename: "Rate vs Orientation Comparision charts.pdf", type: "pdf", size: "24.9 KB" },
+      { title: "Rate vs Range Comparision Charts.pdf", filename: "Rate vs Range Comparision Charts.pdf", type: "pdf", size: "24.9 KB" },
     ],
   },
   {
@@ -174,6 +182,13 @@ export const categories: Category[] = [
     items: [
       { title: "Candela TaaS Report - Wi-Fi 7 AP.pdf", filename: "Candela TaaS Report - Wi-Fi 7 AP.pdf", type: "pdf", size: "12.5 MB" },
       { title: "Advanced suite reports.pdf", filename: "Advanced suite reports.pdf", type: "pdf", size: "28.3 MB" },
+    ],
+  },
+  {
+    name: "Wi-Fi Station Testing",
+    slug: "wifi-station-testing",
+    items: [
+      { title: "Station Side Test Solution.pdf", filename: "Station Side Test Solution.pdf", type: "pdf", size: "4.98 MB" },
     ],
   },
 ]

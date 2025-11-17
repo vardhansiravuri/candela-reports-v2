@@ -115,6 +115,17 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
     },
   ],
 
+  "cellular-wifi": [
+    {
+      name: "Cell Emulator 1.pdf",
+      path: "/reports/Cellular Wi-Fi/Cell Emulator 1.pdf",
+    },
+    {
+      name: "Cell Emulator 2.pdf",
+      path: "/reports/Cellular Wi-Fi/Cell Emulator 2.pdf",
+    },
+  ],
+
   // -----------------------------
   // Comparison charts
   // -----------------------------
@@ -550,6 +561,13 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
         "Advanced suite reports.pdf",
       path:
         "/reports/Wi-Fi AP TaaS/Advanced suite reports.pdf",
+    },
+  ],
+  
+  "wifi-station-testing": [
+    {
+      name: "Station Side Test Solution.pdf",
+      path: "/reports/Wi-Fi Station Testing/Station Side Test Solution.pdf",
     },
   ],
 };

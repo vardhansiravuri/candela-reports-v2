@@ -17,12 +17,17 @@ const categoryMeta: Record<
     tagline: "End-to-end Wi-Fi automation suites.",
     accent: "from-emerald-500/20 to-emerald-500/0 border-emerald-500/40",
   },
+  "cellular-wifi": {
+    icon: "📶",
+    tagline: "Cell emulator and cellular + Wi-Fi convergence tests.",
+    accent: "from-amber-400/20 to-amber-400/0 border-amber-400/40",
+  },
   "comparison-charts": {
     icon: "📊",
     tagline: "Side-by-side performance comparisons.",
     accent: "from-sky-500/20 to-sky-500/0 border-sky-500/40",
   },
-  dfs: {
+  "dfs": {
     icon: "📡",
     tagline: "DFS compliance and radar detection.",
     accent: "from-amber-500/20 to-amber-500/0 border-amber-500/40",
@@ -66,6 +71,11 @@ const categoryMeta: Record<
     icon: "🧪",
     tagline: "Testing-as-a-Service output for APs.",
     accent: "from-indigo-500/20 to-indigo-500/0 border-indigo-500/40",
+  },
+  "wifi-station-testing": {
+    icon: "💻",
+    tagline: "Station-side Wi-Fi client performance and stability.",
+    accent: "from-blue-500/20 to-blue-500/0 border-blue-500/40",
   },
 };
 
