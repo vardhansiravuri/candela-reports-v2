@@ -173,7 +173,7 @@ export const categories: Category[] = [
     slug: "wi-fi-ap-taas",
     items: [
       { title: "Candela TaaS Report - Wi-Fi 7 AP.pdf", filename: "Candela TaaS Report - Wi-Fi 7 AP.pdf", type: "pdf", size: "12.5 MB" },
-      { title: "Candela Testing as a service reports - Basic + Advanced suite reports.pdf", filename: "Candela Testing as a service reports - Basic + Advanced suite reports.pdf", type: "pdf", size: "28.3 MB" },
+      { title: "Advanced suite reports.pdf", filename: "Advanced suite reports.pdf", type: "pdf", size: "28.3 MB" },
     ],
   },
 ]

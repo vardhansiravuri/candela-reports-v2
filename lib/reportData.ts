@@ -547,9 +547,9 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
     },
     {
       name:
-        "Candela Testing as a service reports - Basic + Advanced suite reports.pdf",
+        "Advanced suite reports.pdf",
       path:
-        "/reports/Wi-Fi AP TaaS/Candela Testing as a service reports - Basic + Advanced suite reports.pdf",
+        "/reports/Wi-Fi AP TaaS/Advanced suite reports.pdf",
     },
   ],
 };
