@@ -2,7 +2,7 @@
 
 export type ReportCategorySlug =
   | "automated-test-reports"
-    "cellular-wifi"
+  | "cellular-wifi"
   | "comparison-charts"
   | "dfs"
   | "interop-reports"
@@ -13,7 +13,9 @@ export type ReportCategorySlug =
   | "tr-398"
   | "wifi-7"
   | "wifi-ap-taas"
-    "wifi-station-testing";
+  | "wifi-station-testing"
+  | "bluforge"
+  | "rf-enclosures";
 
 export type ReportFile = {
   name: string;
@@ -34,6 +36,8 @@ export const categoryTitles: Record<ReportCategorySlug, string> = {
   "wifi-7": "Wi-Fi 7",
   "wifi-ap-taas": "Wi-Fi AP TaaS",
   "wifi-station-testing": "Wi-Fi Station Testing",
+  bluforge: "BluForge",
+  "rf-enclosures": "RF Enclosures",
 };
 
 export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
@@ -572,6 +576,34 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
     {
       name: "Station Side Test Solution.pdf",
       path: "/reports/Wi-Fi Station Testing/Station Side Test Solution.pdf",
+    },
+  ],
+
+  // -----------------------------
+  // BluForge
+  // -----------------------------
+  bluforge: [
+    {
+      name: "Impact of 1 BLE Module Report.pdf",
+      path: "/reports/Bluforge/Impact of 1 BLE Module Report.pdf",
+    },
+    {
+      name: "Impact with 5 BLE Modules Report.pdf",
+      path: "/reports/Bluforge/Impact with 5 BLE Modules Report.pdf",
+    },
+    {
+      name: "Impact with BLE Advertisements Report.pdf",
+      path: "/reports/Bluforge/Impact with BLE Advertisements Report.pdf",
+    },
+  ],
+
+  // -----------------------------
+  // RF Enclosures
+  // -----------------------------
+  "rf-enclosures": [
+    {
+      name: "Candela RF Enclosures.pdf",
+      path: "/reports/RF Enclosures/Candela RF Enclosures.pdf",
     },
   ],
 };

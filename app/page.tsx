@@ -77,6 +77,16 @@ const categoryMeta: Record<
     tagline: "Station-side Wi-Fi client performance and stability.",
     accent: "from-blue-500/20 to-blue-500/0 border-blue-500/40",
   },
+  bluforge: {
+    icon: "🔷",
+    tagline: "BluForge test reports and analysis.",
+    accent: "from-purple-500/20 to-purple-500/0 border-purple-500/40",
+  },
+  "rf-enclosures": {
+    icon: "🛡️",
+    tagline: "Our new RF enclosures, engineered in india.",
+    accent: "from-green-500/20 to-green-500/0 border-green-500/40",
+  },
 };
 
 export default function Home() {
