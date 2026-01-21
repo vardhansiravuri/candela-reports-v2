@@ -414,10 +414,6 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
       path: "/reports/Test House Reports/interop_qos.pdf",
     },
     {
-      name: "Main_Roaming_Report.pdf",
-      path: "/reports/Test House Reports/Main_Roaming_Report.pdf",
-    },
-    {
       name: "throughput (3).pdf",
       path: "/reports/Test House Reports/throughput (3).pdf",
     },
