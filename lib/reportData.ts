@@ -397,6 +397,11 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
       path: "/reports/Test House Reports/ftp_test.pdf",
     },
     {
+      name: "Generic Test House Coverage & Capacity Presentation.pdf",
+      path:
+        "/reports/Test House Reports/Generic Test House Coverage & Capacity Presentation.pdf",
+    },
+    {
       name: "interopability.pdf",
       path: "/reports/Test House Reports/interopability.pdf",
     },
@@ -407,6 +412,10 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
     {
       name: "interop_qos.pdf",
       path: "/reports/Test House Reports/interop_qos.pdf",
+    },
+    {
+      name: "Main_Roaming_Report.pdf",
+      path: "/reports/Test House Reports/Main_Roaming_Report.pdf",
     },
     {
       name: "throughput (3).pdf",
