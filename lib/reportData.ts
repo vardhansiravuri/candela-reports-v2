@@ -516,11 +516,11 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
       name: "6.5.7 MLO STR Test.pdf",
       path: "/reports/TR-398/6.5.7 MLO STR Test.pdf",
     },
-    // If/when you add back the compressed full report, uncomment this:
-    // {
-    //   name: "TR-398v4 Full Report.pdf",
-    //   path: "/reports/TR-398/TR-398v4 Full Report.pdf",
-    // },
+     
+     {
+       name: "TR-398v4 Full Report.pdf",
+       path: "/reports/TR-398/TR-398v4 Full Report.pdf",
+     },
   ],
 
   // -----------------------------
