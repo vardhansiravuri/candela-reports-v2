@@ -519,7 +519,7 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
      
      {
        name: "TR-398v4 Full Report.pdf",
-       path: "/reports/TR-398/TR-398v4 Full Report.pdf",
+       path: "https://gtjxejklrforoglhstnm.supabase.co/storage/v1/object/public/reports/tr398/tr-398v4-full-report.pdf",
      },
   ],
 
