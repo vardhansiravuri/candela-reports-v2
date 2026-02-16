@@ -13,9 +13,14 @@ const categoryMeta: Record<
   { icon: string; tagline: string; accent: string }
 > = {
   "automated-test-reports": {
-    icon: "🤖",
+    icon: "⚙️", // Updated to automation-related gear
     tagline: "End-to-end Wi-Fi automation suites.",
     accent: "from-emerald-500/20 to-emerald-500/0 border-emerald-500/40",
+  },
+  "automated-test-robot": {
+    icon: "🤖", // Moved robot emoji here
+    tagline: "Robot-assisted roaming and mobility testing.",
+    accent: "from-green-400/20 to-green-400/0 border-green-400/40",
   },
   "cellular-wifi": {
     icon: "📶",

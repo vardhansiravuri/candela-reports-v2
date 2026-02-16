@@ -2,6 +2,7 @@
 
 export type ReportCategorySlug =
   | "automated-test-reports"
+  | "automated-test-robot"
   | "cellular-wifi"
   | "comparison-charts"
   | "dfs"
@@ -24,6 +25,7 @@ export type ReportFile = {
 
 export const categoryTitles: Record<ReportCategorySlug, string> = {
   "automated-test-reports": "Automated Test Reports",
+  "automated-test-robot": "Automated Test Robot",
   "cellular-wifi": "Cellular + Wi-Fi",
   "comparison-charts": "Comparison charts",
   dfs: "DFS",
@@ -120,6 +122,36 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
     {
       name: "Throughput vs Packet Size.pdf",
       path: "/reports/Automated Test Reports/Throughput vs Packet Size.pdf",
+    },
+  ],
+
+  // -----------------------------
+  // Automated Test Robot (NEW)
+  // -----------------------------
+  "automated-test-robot": [
+    {
+      name: "Robot_Automated_Band_Steering_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Automated_Band_Steering_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Ping_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Ping_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Roam_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Roam_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Standalone_QoS_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Standalone_QoS_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Standalone_YouTube_Streaming_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Standalone_YouTube_Streaming_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Throughput_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Throughput_Test_Report.pdf",
     },
   ],
 
