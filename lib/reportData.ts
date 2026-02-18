@@ -348,6 +348,10 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
       path: "/reports/Mesh Reports/band_steering.pdf",
     },
     {
+      name: "Mesh Roam Test.pdf",
+      path: "/reports/Mesh Reports/Mesh Roam Test.pdf",
+    },
+    {
       name: "Mesh Automated Roaming Test Report.pdf",
       path: "/reports/Mesh Reports/Mesh Automated Roaming Test Report.pdf",
     },
