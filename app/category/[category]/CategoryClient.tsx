@@ -5,10 +5,11 @@ import type { ReportFile } from "../../../lib/reportData";
 
 type CategoryClientProps = {
   category: string;       // Human readable, e.g. "Wi-Fi 7"
-  files: ReportFile[];    // { name, path }[]
+  categorySlug: string;   // URL slug, e.g. "wifi-7"
+  files: ReportFile[];   // { name, path }[]
 };
 
-export function CategoryClient({ category, files }: CategoryClientProps) {
+export function CategoryClient({ category, categorySlug, files }: CategoryClientProps) {
   const [selectedFile, setSelectedFile] = useState<ReportFile>(files[0]);
   const currentUrl = selectedFile.path;
 
@@ -22,12 +23,20 @@ export function CategoryClient({ category, files }: CategoryClientProps) {
           </p>
           <h1 className="text-2xl font-semibold">{category}</h1>
         </div>
-        <a
-          href="/"
-          className="text-sm text-neutral-300 hover:text-white underline-offset-4 hover:underline"
-        >
-          ← Back to categories
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={`/api/download-category/${categorySlug}`}
+            className="text-sm px-4 py-2 rounded-md border border-neutral-600 hover:bg-neutral-800 bg-neutral-900"
+          >
+            Download All
+          </a>
+          <a
+            href="/"
+            className="text-sm text-neutral-300 hover:text-white underline-offset-4 hover:underline"
+          >
+            ← Back to categories
+          </a>
+        </div>
       </header>
 
       <div className="flex flex-1">

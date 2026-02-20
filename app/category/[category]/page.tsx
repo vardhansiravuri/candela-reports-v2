@@ -24,5 +24,5 @@ export default async function CategoryPage({ params }: Props) {
 
   const title = categoryTitles[slug];
 
-  return <CategoryClient category={title} files={files} />;
+  return <CategoryClient category={title} categorySlug={slug} files={files} />;
 }
