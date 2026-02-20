@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import JSZip from "jszip";
 import type { ReportFile } from "../../../lib/reportData";
 
 type CategoryClientProps = {
@@ -11,7 +12,31 @@ type CategoryClientProps = {
 
 export function CategoryClient({ category, categorySlug, files }: CategoryClientProps) {
   const [selectedFile, setSelectedFile] = useState<ReportFile>(files[0]);
+  const [isDownloading, setIsDownloading] = useState(false);
   const currentUrl = selectedFile.path;
+
+  async function handleDownloadAll() {
+    setIsDownloading(true);
+    try {
+      const zip = new JSZip();
+      for (const file of files) {
+        const response = await fetch(file.path);
+        const blob = await response.blob();
+        zip.file(file.name, blob);
+      }
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+      const url = URL.createObjectURL(zipBlob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${categorySlug}.zip`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("Download failed:", err);
+    } finally {
+      setIsDownloading(false);
+    }
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-neutral-950 text-white">
@@ -24,12 +49,13 @@ export function CategoryClient({ category, categorySlug, files }: CategoryClient
           <h1 className="text-2xl font-semibold">{category}</h1>
         </div>
         <div className="flex items-center gap-3">
-          <a
-            href={`/api/download-category/${categorySlug}`}
-            className="text-sm px-4 py-2 rounded-md border border-neutral-600 hover:bg-neutral-800 bg-neutral-900"
+          <button
+            onClick={handleDownloadAll}
+            disabled={isDownloading}
+            className="text-sm px-4 py-2 rounded-md border border-neutral-600 hover:bg-neutral-800 bg-neutral-900 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Download All
-          </a>
+            {isDownloading ? "Preparing..." : "Download All"}
+          </button>
           <a
             href="/"
             className="text-sm text-neutral-300 hover:text-white underline-offset-4 hover:underline"
