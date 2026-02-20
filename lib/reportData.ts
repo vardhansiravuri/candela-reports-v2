@@ -128,7 +128,7 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
   // -----------------------------
   // Automated Test Robot (NEW)
   // -----------------------------
-  "automated-test-robot": [
+"automated-test-robot": [
     {
       name: "Robot_Automated_Band_Steering_Test_Report.pdf",
       path: "/reports/Automated Test Robot/Robot_Automated_Band_Steering_Test_Report.pdf",
@@ -153,8 +153,36 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
       name: "Robot_Throughput_Test_Report.pdf",
       path: "/reports/Automated Test Robot/Robot_Throughput_Test_Report.pdf",
     },
+    /* New Reports */
+    {
+      name: "Robot_FTP_Band_Steering_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_FTP_Band_Steering_Test_Report.pdf",
+    },
+    {
+      name: "Robot_FTP_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_FTP_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Real_Browser_Band_Steering_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Real_Browser_Band_Steering_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Real_Browser_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Real_Browser_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Video_Streaming_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Video_Streaming_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Zoom_Call_Band_Steering_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Zoom_Call_Band_Steering_Test_Report.pdf",
+    },
+    {
+      name: "Robot_Zoom_Call_Test_Report.pdf",
+      path: "/reports/Automated Test Robot/Robot_Zoom_Call_Test_Report.pdf",
+    },
   ],
-
   "cellular-wifi": [
     {
       name: "Cell Emulator 1.pdf",
@@ -223,95 +251,100 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
   // -----------------------------
   // Interop Reports
   // -----------------------------
-  "interop-reports": [
-    {
-      name: "FTP Traffic Test.pdf",
-      path: "/reports/Interop Reports/FTP Traffic Test.pdf",
-    },
-    {
-      name: "Hotspot_TestReport_50 Iterations_2SAP's.pdf",
-      path:
-        "/reports/Interop Reports/Hotspot_TestReport_50 Iterations_2SAP's.pdf",
-    },
-    {
-      name: "HTTP Traffic Test.pdf",
-      path: "/reports/Interop Reports/HTTP Traffic Test.pdf",
-    },
-    {
-      name: "Interoperability Test.pdf",
-      path: "/reports/Interop Reports/Interoperability Test.pdf",
-    },
-    {
-      name: "Mixed Traffic Test.pdf",
-      path: "/reports/Interop Reports/Mixed Traffic Test.pdf",
-    },
-    {
-      name: "Multicast_Test.pdf",
-      path: "/reports/Interop Reports/Multicast_Test.pdf",
-    },
-    {
-      name: "Ping Test.pdf",
-      path: "/reports/Interop Reports/Ping Test.pdf",
-    },
-    {
-      name: "Port Reset Test.pdf",
-      path: "/reports/Interop Reports/Port Reset Test.pdf",
-    },
-    {
-      name: "Qos_Test.pdf",
-      path: "/reports/Interop Reports/Qos_Test.pdf",
-    },
-    {
-      name: "Real_Browser_Report.pdf",
-      path: "/reports/Interop Reports/Real_Browser_Report.pdf",
-    },
-    {
-      name: "Roam Test (1).pdf",
-      path: "/reports/Interop Reports/Roam Test (1).pdf",
-    },
-    {
-      name: "Roam Test along with Roam Time.pdf",
-      path:
-        "/reports/Interop Reports/Roam Test along with Roam Time.pdf",
-    },
-    {
-      name: "RVR Multi client Test.pdf",
-      path: "/reports/Interop Reports/RVR Multi client Test.pdf",
-    },
-    {
-      name: "speedtest.pdf",
-      path: "/reports/Interop Reports/speedtest.pdf",
-    },
-    {
-      name: "Teams_Call_Automation_Report.pdf",
-      path: "/reports/Interop Reports/Teams_Call_Automation_Report.pdf",
-    },
-    {
-      name: "Throughput Test.pdf",
-      path: "/reports/Interop Reports/Throughput Test.pdf",
-    },
-    {
-      name: "Throughput_20clients_Test_Download.pdf",
-      path:
-        "/reports/Interop Reports/Throughput_20clients_Test_Download.pdf",
-    },
-    {
-      name: "Video Streaming Test.pdf",
-      path: "/reports/Interop Reports/Video Streaming Test.pdf",
-    },
-    {
-      name: "Vlc_Stremaing_Report.pdf",
-      path: "/reports/Interop Reports/Vlc_Stremaing_Report.pdf",
-    },
-    {
-      name: "youtube_streaming.pdf",
-      path: "/reports/Interop Reports/youtube_streaming.pdf",
-    },
-    {
-      name: "Zoom call Test.pdf",
-      path: "/reports/Interop Reports/Zoom call Test.pdf",
-    },
-  ],
+ "interop-reports": [
+  {
+    name: "FTP Traffic Test.pdf",
+    path: "/reports/Interop Reports/FTP Traffic Test.pdf",
+  },
+  {
+    name: "Hotspot_TestReport_50 Iterations_2SAP's.pdf",
+    path: "/reports/Interop Reports/Hotspot_TestReport_50 Iterations_2SAP's.pdf",
+  },
+  {
+    name: "HTTP Traffic Test.pdf",
+    path: "/reports/Interop Reports/HTTP Traffic Test.pdf",
+  },
+  {
+    name: "Interoperability Test.pdf",
+    path: "/reports/Interop Reports/Interoperability Test.pdf",
+  },
+  {
+    name: "Mixed Traffic Test.pdf",
+    path: "/reports/Interop Reports/Mixed Traffic Test.pdf",
+  },
+  {
+    name: "Multicast_Test.pdf",
+    path: "/reports/Interop Reports/Multicast_Test.pdf",
+  },
+  {
+    name: "Netflix Streaming Sample Report.pdf",
+    path: "/reports/Interop Reports/Netflix Streaming Sample Report.pdf",
+  },
+  {
+    name: "Ping Test.pdf",
+    path: "/reports/Interop Reports/Ping Test.pdf",
+  },
+  {
+    name: "Port Reset Test.pdf",
+    path: "/reports/Interop Reports/Port Reset Test.pdf",
+  },
+  {
+    name: "Qos_Test.pdf",
+    path: "/reports/Interop Reports/Qos_Test.pdf",
+  },
+  {
+    name: "Real_Browser_Report.pdf",
+    path: "/reports/Interop Reports/Real_Browser_Report.pdf",
+  },
+  {
+    name: "Roam Test (1).pdf",
+    path: "/reports/Interop Reports/Roam Test (1).pdf",
+  },
+  {
+    name: "Roam Test along with Roam Time.pdf",
+    path: "/reports/Interop Reports/Roam Test along with Roam Time.pdf",
+  },
+  {
+    name: "RVR Multi client Test.pdf",
+    path: "/reports/Interop Reports/RVR Multi client Test.pdf",
+  },
+  {
+    name: "speedtest.pdf",
+    path: "/reports/Interop Reports/speedtest.pdf",
+  },
+  {
+    name: "teams_call_report.pdf",
+    path: "/reports/Interop Reports/teams_call_report.pdf",
+  },
+  {
+    name: "Throughput Test.pdf",
+    path: "/reports/Interop Reports/Throughput Test.pdf",
+  },
+  {
+    name: "Throughput_20clients_Test_Download.pdf",
+    path: "/reports/Interop Reports/Throughput_20clients_Test_Download.pdf",
+  },
+  {
+    name: "Video Streaming Test.pdf",
+    path: "/reports/Interop Reports/Video Streaming Test.pdf",
+  },
+  {
+    name: "Vlc_Stremaing_Report.pdf",
+    path: "/reports/Interop Reports/Vlc_Stremaing_Report.pdf",
+  },
+  {
+    name: "YouTube Shorts Sample Report.pdf",
+    path: "/reports/Interop Reports/YouTube Shorts Sample Report.pdf",
+  },
+  {
+    name: "youtube_streaming.pdf",
+    path: "/reports/Interop Reports/youtube_streaming.pdf",
+  },
+  {
+    name: "zoom_call_report.pdf",
+    path: "/reports/Interop Reports/zoom_call_report.pdf",
+  },
+],
 
   // -----------------------------
   // IoT Reports
@@ -417,51 +450,76 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
   // -----------------------------
   // Test House Reports
   // -----------------------------
-  "test-house-reports": [
-    {
-      name: "2025-09-05-18-01-52-mixed_traffic_test_all.pdf",
-      path:
-        "/reports/Test House Reports/2025-09-05-18-01-52-mixed_traffic_test_all.pdf",
-    },
-    {
-      name: "2025-09-05-18-36-34-test_l3.pdf",
-      path:
-        "/reports/Test House Reports/2025-09-05-18-36-34-test_l3.pdf",
-    },
-    {
-      name: "ftp_test.pdf",
-      path: "/reports/Test House Reports/ftp_test.pdf",
-    },
-    {
-      name: "Generic Test House Coverage & Capacity Presentation.pdf",
-      path:
-        "/reports/Test House Reports/Generic Test House Coverage & Capacity Presentation.pdf",
-    },
-    {
-      name: "interopability.pdf",
-      path: "/reports/Test House Reports/interopability.pdf",
-    },
-    {
-      name: "interop_ping.pdf",
-      path: "/reports/Test House Reports/interop_ping.pdf",
-    },
-    {
-      name: "interop_qos.pdf",
-      path: "/reports/Test House Reports/interop_qos.pdf",
-    },
-    {
-      name: "throughput (3).pdf",
-      path: "/reports/Test House Reports/throughput (3).pdf",
-    },
-    {
-      name: "VideoStreaming_test.pdf",
-      path: "/reports/Test House Reports/VideoStreaming_test.pdf",
-    },
-    {
-      name: "Webpage.pdf",
-      path: "/reports/Test House Reports/Webpage.pdf",
-    },
-  ],
+ "test-house-reports": [
+  {
+    name: "Coverage RvR RvRvO.pdf",
+    path: "/reports/Test House Reports/Coverage RvR RvRvO.pdf",
+  },
+  {
+    name: "ftp_test.pdf",
+    path: "/reports/Test House Reports/ftp_test.pdf",
+  },
+  {
+    name: "Generic Test House Coverage & Capacity Presentation.pdf",
+    path: "/reports/Test House Reports/Generic Test House Coverage & Capacity Presentation.pdf",
+  },
+  {
+    name: "interop_ping.pdf",
+    path: "/reports/Test House Reports/interop_ping.pdf",
+  },
+  {
+    name: "interop_qos.pdf",
+    path: "/reports/Test House Reports/interop_qos.pdf",
+  },
+  {
+    name: "interopability.pdf",
+    path: "/reports/Test House Reports/interopability.pdf",
+  },
+  {
+    name: "IoT Stress Testing.pdf",
+    path: "/reports/Test House Reports/IoT Stress Testing.pdf",
+  },
+  {
+    name: "IP Management.pdf",
+    path: "/reports/Test House Reports/IP Management.pdf",
+  },
+  {
+    name: "layer3_test.pdf",
+    path: "/reports/Test House Reports/layer3_test.pdf",
+  },
+  {
+    name: "Mesh Reliability Stress testing.pdf",
+    path: "/reports/Test House Reports/Mesh Reliability Stress testing.pdf",
+  },
+  {
+    name: "mixed_traffic_test_all.pdf",
+    path: "/reports/Test House Reports/mixed_traffic_test_all.pdf",
+  },
+  {
+    name: "Security Camera Testing.pdf",
+    path: "/reports/Test House Reports/Security Camera Testing.pdf",
+  },
+  {
+    name: "Set Up Box Streaming Validation.pdf",
+    path: "/reports/Test House Reports/Set Up Box Streaming Validation.pdf",
+  },
+  {
+    name: "TestHouse Gaming.pdf",
+    path: "/reports/Test House Reports/TestHouse Gaming.pdf",
+  },
+  {
+    name: "throughput.pdf",
+    path: "/reports/Test House Reports/throughput.pdf",
+  },
+  {
+    name: "VideoStreaming_test.pdf",
+    path: "/reports/Test House Reports/VideoStreaming_test.pdf",
+  },
+  {
+    name: "Webpage.pdf",
+    path: "/reports/Test House Reports/Webpage.pdf",
+  },
+],
 
   // -----------------------------
   // TR-398
@@ -601,17 +659,19 @@ export const reportData: Record<ReportCategorySlug, ReportFile[]> = {
   // Wi-Fi AP TaaS
   // -----------------------------
   "wifi-ap-taas": [
-    {
-      name: "Candela TaaS Report - Wi-Fi 7 AP.pdf",
-      path: "/reports/Wi-Fi AP TaaS/Candela TaaS Report - Wi-Fi 7 AP.pdf",
-    },
-    {
-      name:
-        "Advanced suite reports.pdf",
-      path:
-        "/reports/Wi-Fi AP TaaS/Advanced suite reports.pdf",
-    },
-  ],
+  {
+    name: "Advanced suite reports.pdf",
+    path: "/reports/Wi-Fi AP TaaS/Advanced suite reports.pdf",
+  },
+  {
+    name: "Candela TaaS Report - Wi-Fi 7 AP.pdf",
+    path: "/reports/Wi-Fi AP TaaS/Candela TaaS Report - Wi-Fi 7 AP.pdf",
+  },
+  {
+    name: "Candela W-Fi Router Test Report.pdf",
+    path: "/reports/Wi-Fi AP TaaS/Candela W-Fi Router Test Report.pdf",
+  },
+],
   
   "wifi-station-testing": [
     {
